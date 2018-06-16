@@ -1,0 +1,711 @@
+/*!
+Theme Name: eden
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: eden
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+eden is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+#cmsmasters_row_31aa9cc3b8 .cmsmasters_row_outer_parent {
+  padding-top: 0px; }
+
+#cmsmasters_row_31aa9cc3b8 .cmsmasters_row_outer_parent {
+  padding-bottom: 0px; }
+
+#cmsmasters_row_31aa9cc3b8 .cmsmasters_row_inner.cmsmasters_row_fullwidth {
+  padding-left: 0%; }
+
+#cmsmasters_row_31aa9cc3b8 .cmsmasters_row_inner.cmsmasters_row_fullwidth {
+  padding-right: 0%; }
+
+#slide-1-layer-2 .tp-splitted.tp-wordsplit div, #slide-2-layer-2 .tp-splitted.tp-wordsplit div {
+  overflow: visible !important;
+  display: inline !important; }
+
+#rev_slider_1_1 .uranus.tparrows {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0); }
+
+#rev_slider_1_1 .uranus.tparrows:before {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s; }
+
+#rev_slider_1_1 .uranus.tparrows:hover:before {
+  opacity: 0.75; }
+
+#cmsmasters_row_4230c492f5 .cmsmasters_row_outer_parent {
+  padding-top: 65px; }
+
+#cmsmasters_row_4230c492f5 .cmsmasters_row_outer_parent {
+  padding-bottom: 65px; }
+
+#cmsmasters_fb_618b8d6973 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff; }
+
+#cmsmasters_fb_618b8d6973 .featured_block_inner {
+  width: 59%;
+  text-align: center;
+  margin: 0 auto; }
+
+#cmsmasters_fb_618b8d6973 .featured_block_text {
+  text-align: center; }
+
+#cmsmasters_heading_c91fc928e0 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_c91fc928e0 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_c91fc928e0 .cmsmasters_heading, #cmsmasters_heading_c91fc928e0 .cmsmasters_heading a {
+  font-family: 'Herr Von Muellerhoff';
+  font-size: 140px;
+  line-height: 160px;
+  font-style: normal;
+  color: #dedede; }
+
+@media (max-width: 768px) {
+  #cmsmasters_heading_c91fc928e0 .cmsmasters_heading, #cmsmasters_heading_c91fc928e0 .cmsmasters_heading a {
+    font-size: 100px;
+    line-height: 120px; } }
+#cmsmasters_heading_da9e214125 {
+  text-align: center;
+  margin-top: -67px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_da9e214125 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_fb_92fb437567 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff; }
+
+#cmsmasters_fb_92fb437567 .featured_block_inner {
+  width: 55%;
+  text-align: left;
+  margin: 0 auto; }
+
+#cmsmasters_fb_92fb437567 .featured_block_text {
+  text-align: left; }
+
+#cmsmasters_heading_97c81d3a16 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_97c81d3a16 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_97c81d3a16 .cmsmasters_heading, #cmsmasters_heading_97c81d3a16 .cmsmasters_heading a {
+  font-size: 28px;
+  line-height: 38px;
+  color: #c19b76; }
+
+#cmsmasters_heading_97c81d3a16 .cmsmasters_heading a:hover {
+  color: #6a6a6a; }
+
+#cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+  padding-top: 0px; }
+
+#cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+  padding-bottom: 140px; }
+
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-top: 0px; } }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-top: 0px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-top: 0px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-top: 0px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_54c9a92b73 .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+#cmsmasters_fb_2c4ebef079 {
+  padding-top: 220px;
+  padding-bottom: 220px;
+  background-image: url(img/scene-recovered.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+
+#cmsmasters_fb_2c4ebef079 .featured_block_inner {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; }
+
+#cmsmasters_fb_2c4ebef079 .featured_block_text {
+  text-align: left; }
+
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-top: 200px; } }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-bottom: 200px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-top: 200px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-bottom: 200px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-top: 100px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-bottom: 100px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-top: 70px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_fb_2c4ebef079 {
+    padding-bottom: 70px; } }
+#cmsmasters_fb_30f462d812 {
+  padding-top: 220px;
+  padding-bottom: 220px;
+  background-image: url(img/building.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+
+#cmsmasters_fb_30f462d812 .featured_block_inner {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; }
+
+#cmsmasters_fb_30f462d812 .featured_block_text {
+  text-align: left; }
+
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-top: 200px; } }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-bottom: 200px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-top: 200px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-bottom: 200px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-top: 100px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-bottom: 100px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-top: 70px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_fb_30f462d812 {
+    padding-bottom: 70px; } }
+#cmsmasters_fb_008a6884c4 {
+  padding-top: 220px;
+  padding-bottom: 220px;
+  background-image: url(img/A1.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+
+#cmsmasters_fb_008a6884c4 .featured_block_inner {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; }
+
+#cmsmasters_fb_008a6884c4 .featured_block_text {
+  text-align: left; }
+
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-top: 200px; } }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-bottom: 200px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-top: 200px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-bottom: 200px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-top: 100px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-bottom: 100px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-top: 70px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_fb_008a6884c4 {
+    padding-bottom: 70px; } }
+#cmsmasters_row_7c21fffe28 {
+  background-color: #f5f5f5; }
+
+#cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+  padding-top: 70px; }
+
+#cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+  padding-bottom: 0px; }
+
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-top: 30px; } }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-bottom: 0px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-top: 30px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-bottom: 0px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-top: 30px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-bottom: 0px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-top: 30px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_7c21fffe28 .cmsmasters_row_outer_parent {
+    padding-bottom: 0px; } }
+#cmsmasters_heading_9bee934291 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_9bee934291 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_9bee934291 .cmsmasters_heading, #cmsmasters_heading_9bee934291 .cmsmasters_heading a {
+  font-family: 'Herr Von Muellerhoff';
+  font-size: 140px;
+  line-height: 170px;
+  font-style: normal;
+  color: #d5d5d5; }
+
+@media (max-width: 768px) {
+  #cmsmasters_heading_9bee934291 .cmsmasters_heading, #cmsmasters_heading_9bee934291 .cmsmasters_heading a {
+    font-size: 100px;
+    line-height: 120px; } }
+#cmsmasters_heading_4dc8f85b10 {
+  text-align: center;
+  margin-top: -75px;
+  margin-bottom: 20px; }
+
+#cmsmasters_heading_4dc8f85b10 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_4dc8f85b10 .cmsmasters_heading, #cmsmasters_heading_4dc8f85b10 .cmsmasters_heading a {
+  font-size: 60px;
+  line-height: 60px; }
+
+#cmsmasters_row_0f5ea54a2a {
+  background-color: #f5f5f5; }
+
+#cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+  padding-top: 35px; }
+
+#cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+  padding-bottom: 105px; }
+
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-top: 35px; } }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-top: 35px; } }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-top: 35px; } }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-top: 35px; } }
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_0f5ea54a2a .cmsmasters_row_outer_parent {
+    padding-bottom: 50px; } }
+#cmsmasters_row_c0a6e04ffc .cmsmasters_row_outer_parent {
+  padding-top: 70px; }
+
+#cmsmasters_row_c0a6e04ffc .cmsmasters_row_outer_parent {
+  padding-bottom: 70px; }
+
+#cmsmasters_heading_1cf950d867 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_1cf950d867 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_1cf950d867 .cmsmasters_heading, #cmsmasters_heading_1cf950d867 .cmsmasters_heading a {
+  font-family: 'Herr Von Muellerhoff';
+  font-size: 140px;
+  line-height: 160px;
+  font-style: normal;
+  color: #dedede; }
+
+@media (max-width: 768px) {
+  #cmsmasters_heading_1cf950d867 .cmsmasters_heading, #cmsmasters_heading_1cf950d867 .cmsmasters_heading a {
+    font-size: 100px;
+    line-height: 120px; } }
+#cmsmasters_heading_9f0ace5bc3 {
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_9f0ace5bc3 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_9f0ace5bc3 .cmsmasters_heading, #cmsmasters_heading_9f0ace5bc3 .cmsmasters_heading a {
+  font-size: 60px;
+  line-height: 60px; }
+
+#cmsmasters_row_41e40f680c .cmsmasters_row_outer_parent {
+  padding-top: 0px; }
+
+#cmsmasters_row_41e40f680c .cmsmasters_row_outer_parent {
+  padding-bottom: 85px; }
+
+#cmsmasters_row_41e40f680c .cmsmasters_row_inner.cmsmasters_row_fullwidth {
+  padding-left: 3%; }
+
+#cmsmasters_row_41e40f680c .cmsmasters_row_inner.cmsmasters_row_fullwidth {
+  padding-right: 3%; }
+
+#cmsmasters_fb_ef07ee5e3c {
+  background-image: url(img/A1.jpg); }
+
+#cmsmasters_fb_ef07ee5e3c,
+#cmsmasters_fb_e81afc63a2,
+#cmsmasters_fb_659c48ffe6,
+#cmsmasters_fb_725e32fff3 {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain; }
+
+#cmsmasters_fb_ef07ee5e3c .featured_block_inner {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+#cmsmasters_fb_ef07ee5e3c .featured_block_text {
+  text-align: center; }
+
+#cmsmasters_heading_46aaa7bf3a {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_46aaa7bf3a .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_46aaa7bf3a .cmsmasters_heading, #cmsmasters_heading_46aaa7bf3a .cmsmasters_heading a {
+  color: #ffffff; }
+
+#cmsmasters_heading_46aaa7bf3a .cmsmasters_heading a:hover {
+  color: rgba(255, 255, 255, 0.7); }
+
+@media (max-width: 1420px) {
+  #cmsmasters_heading_46aaa7bf3a .cmsmasters_heading, #cmsmasters_heading_46aaa7bf3a .cmsmasters_heading a {
+    font-size: 27px;
+    line-height: 38px; } }
+#cmsmasters_fb_e81afc63a2 {
+  background-image: url(img/B2.jpg); }
+
+#cmsmasters_fb_e81afc63a2 .featured_block_inner {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+#cmsmasters_fb_e81afc63a2 .featured_block_text {
+  text-align: center; }
+
+#cmsmasters_heading_e40f51e41d {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_e40f51e41d .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_e40f51e41d .cmsmasters_heading, #cmsmasters_heading_e40f51e41d .cmsmasters_heading a {
+  color: #ffffff; }
+
+#cmsmasters_heading_e40f51e41d .cmsmasters_heading a:hover {
+  color: rgba(255, 255, 255, 0.7); }
+
+@media (max-width: 1420px) {
+  #cmsmasters_heading_e40f51e41d .cmsmasters_heading, #cmsmasters_heading_e40f51e41d .cmsmasters_heading a {
+    font-size: 27px;
+    line-height: 38px; } }
+#cmsmasters_fb_659c48ffe6 {
+  background-image: url(img/C2.jpg); }
+
+#cmsmasters_fb_659c48ffe6 .featured_block_inner {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+#cmsmasters_fb_659c48ffe6 .featured_block_text {
+  text-align: center; }
+
+#cmsmasters_heading_db96be61a3 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_db96be61a3 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_db96be61a3 .cmsmasters_heading, #cmsmasters_heading_db96be61a3 .cmsmasters_heading a {
+  color: #ffffff; }
+
+#cmsmasters_heading_db96be61a3 .cmsmasters_heading a:hover {
+  color: rgba(255, 255, 255, 0.7); }
+
+@media (max-width: 1420px) {
+  #cmsmasters_heading_db96be61a3 .cmsmasters_heading, #cmsmasters_heading_db96be61a3 .cmsmasters_heading a {
+    font-size: 27px;
+    line-height: 38px; } }
+#cmsmasters_fb_725e32fff3 {
+  background-image: url(img/D2.jpg); }
+
+#cmsmasters_fb_725e32fff3 .featured_block_inner {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+#cmsmasters_fb_725e32fff3 .featured_block_text {
+  text-align: center; }
+
+#cmsmasters_heading_8aaf99f711 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_8aaf99f711 .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_8aaf99f711 .cmsmasters_heading, #cmsmasters_heading_8aaf99f711 .cmsmasters_heading a {
+  color: #ffffff; }
+
+#cmsmasters_heading_8aaf99f711 .cmsmasters_heading a:hover {
+  color: rgba(255, 255, 255, 0.7); }
+
+@media (max-width: 1420px) {
+  #cmsmasters_heading_8aaf99f711 .cmsmasters_heading, #cmsmasters_heading_8aaf99f711 .cmsmasters_heading a {
+    font-size: 27px;
+    line-height: 38px; } }
+#cmsmasters_row_77cfd58d84 .cmsmasters_row_outer_parent {
+  padding-bottom: 20px; }
+
+#cmsmasters_heading_12b327bd0f {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_12b327bd0f .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_12b327bd0f .cmsmasters_heading, #cmsmasters_heading_12b327bd0f .cmsmasters_heading a {
+  font-family: 'Herr Von Muellerhoff';
+  font-size: 140px;
+  line-height: 160px;
+  font-style: normal;
+  color: #dedede; }
+
+#cmsmasters_heading_dc4b4e361b {
+  text-align: center;
+  margin-top: -80px;
+  margin-bottom: 65px; }
+
+#cmsmasters_heading_dc4b4e361b .cmsmasters_heading {
+  text-align: center; }
+
+#cmsmasters_heading_dc4b4e361b .cmsmasters_heading, #cmsmasters_heading_dc4b4e361b .cmsmasters_heading a {
+  font-size: 50px;
+  line-height: 60px; }
+
+@media (max-width: 768px) {
+  #cmsmasters_heading_dc4b4e361b .cmsmasters_heading, #cmsmasters_heading_dc4b4e361b .cmsmasters_heading a {
+    font-size: 40px;
+    line-height: 40px; } }
+#cmsmasters_row_1b8c6e768d .cmsmasters_row_outer_parent {
+  padding-top: 70px; }
+
+#cmsmasters_row_1b8c6e768d .cmsmasters_row_outer_parent {
+  padding-bottom: 40px; }
+
+#cmsmasters_clients_9c2138fda3 .cmsmasters_clients_item {
+  height: 120px;
+  line-height: 120px; }
+
+#cmsmasters_clients_9c2138fda3 .cmsmasters_clients_item a {
+  line-height: 120px; }
+
+#cmsmasters_row_ffba15a89f {
+  background-image: url();
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+
+#cmsmasters_row_ffba15a89f .cmsmasters_row_outer_parent {
+  padding-top: 60px; }
+
+#cmsmasters_row_ffba15a89f .cmsmasters_row_outer_parent {
+  padding-bottom: 85px; }
+
+#cmsmasters_fb_bd6f153502 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: rgba(255, 255, 255, 0); }
+
+#cmsmasters_fb_bd6f153502 .featured_block_inner {
+  width: 71%;
+  padding: 0 0 0 0;
+  text-align: left;
+  float: left;
+  background-color: rgba(255, 255, 255, 0); }
+
+#cmsmasters_fb_bd6f153502 .featured_block_text {
+  text-align: left; }
+
+#cmsmasters_heading_e971eb4070 {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_e971eb4070 .cmsmasters_heading {
+  text-align: left; }
+
+#cmsmasters_heading_e971eb4070 .cmsmasters_heading, #cmsmasters_heading_e971eb4070 .cmsmasters_heading a {
+  font-family: 'Herr Von Muellerhoff';
+  font-size: 140px;
+  line-height: 160px;
+  font-style: normal;
+  color: rgba(192, 196, 209, 0.4); }
+
+#cmsmasters_heading_7accc4859b {
+  text-align: left;
+  margin-top: -72px;
+  margin-bottom: 20px; }
+
+#cmsmasters_heading_7accc4859b .cmsmasters_heading {
+  text-align: left; }
+
+#cmsmasters_heading_7accc4859b .cmsmasters_heading, #cmsmasters_heading_7accc4859b .cmsmasters_heading a {
+  font-size: 50px;
+  line-height: 55px;
+  color: #ffffff; }
+
+@media (max-width: 450px) {
+  #cmsmasters_heading_7accc4859b .cmsmasters_heading, #cmsmasters_heading_7accc4859b .cmsmasters_heading a {
+    font-size: 42px;
+    line-height: 48px; } }
+#cmsmasters_heading_c922662100 {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#cmsmasters_heading_c922662100 .cmsmasters_heading {
+  text-align: left; }
+
+#cmsmasters_heading_c922662100 .cmsmasters_heading, #cmsmasters_heading_c922662100 .cmsmasters_heading a {
+  font-size: 28px;
+  line-height: 38px;
+  color: #c19b76; }
+
+#cmsmasters_heading_c922662100 .cmsmasters_heading a:hover {
+  color: #ffffff; }
+
+.navigation li > a {
+  padding: 20px 30px; }
+
+/*# sourceMappingURL=style.css.map */
