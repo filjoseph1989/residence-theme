@@ -705,7 +705,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 #cmsmasters_heading_c922662100 .cmsmasters_heading a:hover {
   color: #ffffff; }
 
-.navigation li > a {
-  padding: 20px 30px; }
+.navigation {
+  position: relative; }
+  .navigation li > a {
+    padding: 20px 30px; }
 
 /*# sourceMappingURL=style.css.map */

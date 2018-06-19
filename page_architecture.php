@@ -32,32 +32,45 @@ get_header();
       </div>
     </div>
 
- 		<div class="">
- 		  <div class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
- 		    <div class="cmsmasters_row_outer_parent penthouse">
- 		      <div class="cmsmasters_row_outer">
- 		        <div class="cmsmasters_row_inner">
- 		          <div class="cmsmasters_row_margin cmsmasters_11">
- 		            <div class="cmsmasters_column one_first">
-                  <div class="cmsmasters_column_inner">
-      							<div class="">
-      								<?php
-      								while ( have_posts() ) :
-      									the_post();
+    <div class="cmsmasters_row">
+      <div class="cmsmasters_row_outer_parent penthouse">
+        <div class="cmsmasters_row_inner">
+          <div class="cmsmasters_column one_first window">
+            <img src="<?php echo bloginfo('template_url'); ?>/img/charchar/window.png" alt="Window">
+          </div>
+        </div>
+      </div>
+    </div>
 
-      									get_template_part( 'template-parts/content', get_post_type('page') );
+    <div class="cmsmasters_row">
+      <div class="cmsmasters_row_outer_parent penthouse">
+        <div class="cmsmasters_row_inner">
+          <div class="cmsmasters_column one_first">
+            <?php
+            while ( have_posts() ) :
+              the_post();
 
-      								endwhile; // End of the loop.
-      								?>
-      							</div>
-      						</div>
- 		            </div>
- 		          </div>
- 		        </div>
- 		      </div>
- 		    </div>
- 		  </div>
- 		</div>
+              get_template_part( 'template-parts/content', get_post_type('page') );
+
+            endwhile; // End of the loop.
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cmsmasters_row">
+      <div class="cmsmasters_row_outer_parent penthouse">
+        <div class="cmsmasters_row_inner">
+          <div class="cmsmasters_column one_first">
+            <img src="<?php echo bloginfo('template_url'); ?>/img/amenities/terrace.jpg" alt="Terrace">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
 
  	</div>
 

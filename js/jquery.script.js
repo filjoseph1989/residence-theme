@@ -117,7 +117,7 @@ jQuery(document).ready(function() {
 			}
 
 
-			startPortfolio(params.id, params.layout, params.layoutMode, params.url, params.orderby, params.order, params.count, params.categories, params.metadata);
+			// startPortfolio(params.id, params.layout, params.layoutMode, params.url, params.orderby, params.order, params.count, params.categories, params.metadata);
 		} );
 	} )(jQuery);
 

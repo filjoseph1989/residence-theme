@@ -44,6 +44,22 @@ get_header();
  		      <div class="cmsmasters_row_outer">
             <div class="cmsmasters_row_inner">
               <div class="cmsmasters_row_margin cmsmasters_11">
+                <div class="cmsmasters_column one_first">
+                  <div class="cmsmasters_column_inner">
+                    <div class="cmsmasters_featured_block">
+                      <div class="featured_block_inner">
+                        <div class="featured_block_text window">
+                          <img src="<?php echo bloginfo('template_url'); ?>/img/charchar/chair.png" alt="Chair">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cmsmasters_row_inner">
+              <div class="cmsmasters_row_margin cmsmasters_11">
                 <div id="cmsmasters_column_e4fa23546d" class="cmsmasters_column one_first">
                   <div class="cmsmasters_column_inner">
                     <div id="cmsmasters_fb_92fb437567" class="cmsmasters_featured_block">
@@ -70,8 +86,8 @@ get_header();
  		            <div id="cmsmasters_column_b69484d61c" class="cmsmasters_column one_first">
  		              <div class="cmsmasters_column_inner">
  										<div class="cmsmasters_wrap_portfolio entry-summary">
- 											<div class="portfolio grid large_gap perfect cards-parent">
-                        <article class="cmsmasters_project_grid project shortcode_animated" style="width: 620px;">
+ 											<div class="portfolio grid large_gap perfect cards-parent bed-room">
+                        <article class="cmsmasters_project_grid project shortcode_animated">
                           <div class="project_outer">
                             <a href="#">
                               <div class="project_img_wrap">
@@ -107,7 +123,7 @@ get_header();
                             </header>
                           </div>
                         </article>
-                        <article class="cmsmasters_project_grid project shortcode_animated" style="width: 620px;">
+                        <article class="cmsmasters_project_grid project shortcode_animated">
                           <div class="project_outer">
                             <a href="#">
                               <div class="project_img_wrap">
@@ -152,20 +168,13 @@ get_header();
  		          </div>
  		        </div>
 
-            <div class="cmsmasters_row_inner">
-              <div class="cmsmasters_row_margin cmsmasters_11">
-                <div id="cmsmasters_column_b69484d61c" class="cmsmasters_column one_first">
-                  <div class="cmsmasters_column_inner">
-                    <div class="cmsmasters_wrap_portfolio entry-summary">
-                      <div class="portfolio grid large_gap perfect cards-parent">
-                        <article class="cmsmasters_project_grid project shortcode_animated">
-                          <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/onebedrooms/image-1.png" alt="">
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="cmsmasters_row_margin cmsmasters_11 cmsmasters_12-flex">
+              <a href="<?php echo get_page_link(61); ?>">
+                <button type="button" class="btn btn-default">More</button>
+              </a>
+            </div>
+
+            <br><br>
 
  		      </div>
  		    </div>

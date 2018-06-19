@@ -1,14 +1,8 @@
 .logo {
   div {
-    margin-left:20px;
     text-transform: uppercase;
     font-weight:700;
     font-size:18px;
-  }
-}
-
-.logo.logo_small {
-  div {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -224,7 +218,6 @@
 }
 
 .lifestyle {
-    margin-top: 100px;
     .one {
         margin-bottom: 50px;
     }
@@ -405,6 +398,7 @@ h2.cmsmasters_heading {
   padding-top: 50px;
   h1 {
     text-align: center;
+    font-size: 2rem;
   }
 
   .entry-title {
@@ -545,16 +539,23 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
   }
 }
 
-.cmsmasters_header_button_wrap {
-  height: 80px !important;
-}
-
 .cmsmasters_google_map {
   height: 410px;
 }
 
 #closeXButton {
   margin-right: 10px !important;
+}
+.close-requestResidenceModal {
+  margin-left: 10px;
+}
+
+.cmsmasters_12-flex {
+  justify-content: center;
+  align-items: center;
+  .btn {
+    width: 200px;
+  }
 }
 
 @media (min-width: 320px) {
@@ -580,6 +581,36 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
     width: 20rem;
     margin-top: 30px;
   }
+  .lifetyle-slider {
+    #slider-note {
+      font-size: 10px;
+    }
+  }
+  .window {
+    display: flex;
+    justify-content: center;
+
+    img {
+      position: relative;
+      height: 120px;
+    }
+  }
+  .bed-room {
+    flex-direction: column;
+    article {
+      width: 100%;
+      .entry-title {
+        a {
+          font-size: 22px !important;
+        }
+      }
+      .cmsmasters_tab_inner {
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 375px) {
@@ -591,6 +622,9 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
   .middle_inner {
     height: 220px;
     background-size:contain;
+  }
+  .cmsmasters_header_button_wrap {
+    height: 100%;
   }
 }
 
@@ -606,6 +640,32 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
     .middle_inner {
         height: 300px;
     }
+    .lifetyle-slider {
+      #slider-note {
+        font-size: 14px;
+      }
+    }
+    .cmsmasters_heading_wrap {
+      a {
+        .cmsmasters_heading {
+          font-size: 30px;
+        }
+      }
+    }
+    .bed-room {
+      article {
+        .entry-title {
+          a {
+            font-size: 30px !important;
+          }
+        }
+        .cmsmasters_tab_inner {
+          h4 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
 }
 
 @media (min-width: 768px) {
@@ -616,6 +676,15 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
     #cmsmasters_heading_c16df6efd0 .cmsmasters_heading a {
         font-size: 100px;
         line-height: 120px;
+    }
+    .bed-room {
+      flex-direction: row;
+      article {
+        width: 620px;
+      }
+    }
+    #middle {
+      padding-top: 0;
     }
 }
 
@@ -660,7 +729,7 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
 
 @media (min-width: 1200px) {
   #middle {
-    padding-top: 80px;
+    padding-top: 70px;
   }
   .rooms {
     .featured_block_inner {
@@ -669,6 +738,11 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium {
   }
   .navigation li > a {
     padding: 20px 20px;
+  }
+  .logo {
+    img {
+      display: block !important;
+    }
   }
 }
 

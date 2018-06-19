@@ -38,36 +38,44 @@ get_header();
       </div>
     </div>
 
- 		<div class="">
- 		  <div class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
- 		    <div class="cmsmasters_row_outer_parent penthouse">
- 		      <div class="cmsmasters_row_outer">
-            <div class="cmsmasters_row_inner">
-              <div class="cmsmasters_row_margin cmsmasters_11">
-                <div id="cmsmasters_column_e4fa23546d" class="cmsmasters_column one_first">
-                  <div class="cmsmasters_column_inner">
-                    <div id="cmsmasters_fb_92fb437567" class="cmsmasters_featured_block">
-                      <div class="featured_block_inner">
-                        <div class="featured_block_text">
-                          <?php
-                          while ( have_posts() ) :
-                            the_post();
+    <div class="cmsmasters_row">
+      <div class="cmsmasters_row_outer_parent penthouse">
+        <div class="cmsmasters_row_inner">
+          <div class="cmsmasters_row_margin cmsmasters_11">
+            <div class="cmsmasters_column one_first window">
+              <img src="<?php echo bloginfo('template_url'); ?>/img/charchar/untensils.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                            the_content();
+    <div class="cmsmasters_row">
+      <div class="cmsmasters_row_outer_parent penthouse">
+        <div class="cmsmasters_row_inner">
+          <div class="cmsmasters_row_margin cmsmasters_11">
+            <div class="cmsmasters_column one_first">
+              <div class="cmsmasters_featured_block">
+                <div class="featured_block_inner">
+                  <div class="featured_block_text">
+                    <?php
+                    while ( have_posts() ) :
+                      the_post();
 
-                          endwhile; // End of the loop.
-                          ?>
-                        </div>
-                      </div>
-                    </div>
+                      the_content();
+
+                    endwhile; // End of the loop.
+                    ?>
                   </div>
                 </div>
               </div>
             </div>
- 		      </div>
- 		    </div>
- 		  </div>
- 		</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
 
  	</div>
 

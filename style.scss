@@ -979,6 +979,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  }
 
 .navigation {
+  position: relative;
+  
   li > a {
     padding: 20px 30px;
   }

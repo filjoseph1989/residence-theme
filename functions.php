@@ -134,15 +134,15 @@ function eden_scripts() {
 	wp_enqueue_style( 'eden-style-3', get_template_directory_uri() . '/css/adaptive.css', false, '1.0.0', 'screen');
 	wp_enqueue_style( 'eden-style-4', get_template_directory_uri() . '/css/hotel-lux.css', false, '1.0.0', 'screen');
 	wp_enqueue_style( 'eden-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'eden-master', get_template_directory_uri() . '/css/master.css', false, '1.50.0', 'screen');
+	wp_enqueue_style( 'eden-master', get_template_directory_uri() . '/css/master.css', false, '1.57.0', 'screen');
 
 	wp_enqueue_script( 'eden-waypoints', get_template_directory_uri(). '/js/waypoints.min.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-stellar', get_template_directory_uri(). '/js/stellar.min.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-customize', get_template_directory_uri(). '/js/customize.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-owlcarousel', get_template_directory_uri(). '/js/owlcarousel.min.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-scrollspy', get_template_directory_uri(). '/js/scrollspy.js', array('jquery'), '20180529', true );
-	wp_enqueue_script( 'eden-modernizr', get_template_directory_uri(). '/js/modernizr.min.js', array('jquery'), '20180602', true );
-	wp_enqueue_script( 'eden-jquery', get_template_directory_uri(). '/js/jquery.script.js', array('jquery'), '20180613', true );
+	wp_enqueue_script( 'eden-modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js', array('jquery'), '20180603', true );
+	wp_enqueue_script( 'eden-jquery', get_template_directory_uri(). '/js/jquery.script.js', array('jquery'), '20180614', true );
 	wp_enqueue_script( 'eden-jquery.theme-script', get_template_directory_uri(). '/js/jquery.theme-script.js', array('jquery'), '20180609', true );
 	wp_enqueue_script( 'eden-animatedModal', get_template_directory_uri(). '/js/animatedModal.min.js', array('jquery'), '20180612', true );
 	wp_enqueue_script( 'modals', get_template_directory_uri(). '/js/modals.js', array('jquery'), '20180614', true );
