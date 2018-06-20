@@ -130,16 +130,7 @@ get_header();
                                         <a href="#">Gym</a>
                                       </h3>
                                     </header>
-                                    <div class="cmsmasters_slider_post_inner">
-                                      <footer class="cmsmasters_slider_post_footer entry-meta">
-                                        <span class="cmsmasters_comments cmsmasters_slider_post_comments"></span>
-                                      </footer>
-                                      <div class="cmsmasters_slider_post_cont_info entry-meta">
-                                        <span class="cmsmasters_slider_post_category">
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_32" rel="category tag"></a>
-                                        </span>
-                                      </div>
-                                    </div>
+                                    <div class="cmsmasters_slider_post_inner"></div>
                                     <figure class="cmsmasters_img_rollover_wrap preloader">
                                       <img width="580" height="420" src="<?php bloginfo('template_url'); ?>/img/amenities/gym2.jpg" class="full-width wp-post-image" alt="Leave Your Wallet at Home" title="Leave Your Wallet at Home" />
                                       <a href="#" title="Leave Your Wallet at Home" class="cmsmasters_open_link"></a>
@@ -159,18 +150,7 @@ get_header();
                                         <a href="#">Gym</a>
                                       </h3>
                                     </header>
-                                    <div class="cmsmasters_slider_post_inner">
-                                      <footer class="cmsmasters_slider_post_footer entry-meta">
-                                        <span class="cmsmasters_comments cmsmasters_slider_post_comments">
-                                        </span>
-                                      </footer>
-                                      <div class="cmsmasters_slider_post_cont_info entry-meta">
-                                        <span class="cmsmasters_slider_post_category">
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_37" rel="category tag"></a>,
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_33" rel="category tag"></a>
-                                        </span>
-                                      </div>
-                                    </div>
+                                    <div class="cmsmasters_slider_post_inner"></div>
                                     <figure class="cmsmasters_img_rollover_wrap preloader">
                                       <img width="580" height="420" src="<?php bloginfo('template_url'); ?>/img/amenities/gym3.jpg" class="full-width wp-post-image" alt="Healthier, Happier You" title="Healthier, Happier You" />
                                       <a href="#" title="Healthier, Happier You" class="cmsmasters_open_link"></a>
@@ -190,18 +170,7 @@ get_header();
                                         <a href="#">Swimming Pool</a>
                                       </h3>
                                     </header>
-                                    <div class="cmsmasters_slider_post_inner">
-                                      <footer class="cmsmasters_slider_post_footer entry-meta">
-                                        <span class="cmsmasters_comments cmsmasters_slider_post_comments">
-                                        </span>
-                                      </footer>
-                                      <div class="cmsmasters_slider_post_cont_info entry-meta">
-                                        <span class="cmsmasters_slider_post_category">
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_37" rel="category tag"></a>,
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_35" rel="category tag"></a>
-                                        </span>
-                                      </div>
-                                    </div>
+                                    <div class="cmsmasters_slider_post_inner"></div>
                                     <figure class="cmsmasters_img_rollover_wrap preloader">
                                       <img width="580" height="420" src="<?php bloginfo('template_url'); ?>/img/amenities/swimming_pool2.jpg" class="full-width wp-post-image" alt="Active Holidays" title="Active Holidays" />
                                       <a href="#" title="Active Holidays" class="cmsmasters_open_link"></a>
@@ -221,18 +190,7 @@ get_header();
                                         <a href="#">Terrace</a>
                                       </h3>
                                     </header>
-                                    <div class="cmsmasters_slider_post_inner">
-                                      <footer class="cmsmasters_slider_post_footer entry-meta">
-                                        <span class="cmsmasters_comments cmsmasters_slider_post_comments">
-                                        </span>
-                                      </footer>
-                                      <div class="cmsmasters_slider_post_cont_info entry-meta">
-                                        <span class="cmsmasters_slider_post_category">
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_36" rel="category tag"></a>,
-                                          <a href="#" class="cmsmasters_cat_color cmsmasters_cat_33" rel="category tag"></a>
-                                        </span>
-                                      </div>
-                                    </div>
+                                    <div class="cmsmasters_slider_post_inner"></div>
                                     <figure class="cmsmasters_img_rollover_wrap preloader">
                                       <img width="580" height="420" src="<?php bloginfo('template_url') ?>/img/amenities/terrace.jpg" class="full-width wp-post-image" alt="All-Inclusive Thrills" title="All-Inclusive Thrills" />
                                       <a href="#" title="All-Inclusive Thrills" class="cmsmasters_open_link"></a>
@@ -254,7 +212,6 @@ get_header();
             </div>
 
             <br><br>
-
 
  		      </div>
  		    </div>
