@@ -61,12 +61,14 @@ get_header();
                     <div id="cmsmasters_fb_92fb437567" class="cmsmasters_featured_block">
                       <div class="featured_block_inner">
                         <div class="featured_block_text">
-                          <p style="text-align: center;">
-                            <span style="color: #6a6a6a; font-size: 20px; line-height: 28px;">
-                              Situated on the third floor, four exclusive three-bedroom penthouses offer the pinnacle of spacious urban luxury. Designed with expansive outdoor terraces, the Eden Garden penthouses offer instant access to adjacent gym, pool and clubhouse.
-                              <br>
-                            </span>
-                          </p>
+                          <?php
+                          while ( have_posts() ) :
+                            the_post();
+
+                            the_content();
+
+                          endwhile; // End of the loop.
+                          ?>
                         </div>
                       </div>
                     </div>

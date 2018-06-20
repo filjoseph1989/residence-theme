@@ -61,13 +61,14 @@ get_header();
                     <div class="cmsmasters_featured_block">
                       <div class="featured_block_inner">
                         <div class="featured_block_text">
-                          <p style="text-align: center;">
-                            <span style="color: #6a6a6a; font-size: 20px; line-height: 28px;">
-                              Eden Residence offers generous two bedroom units carefully crafted for an urban lifestyle.
-                              Intelligent design meets premium finishes to create homely living spaces for medium-sized families.
-                              <br>
-                            </span>
-                          </p>
+                          <?php
+                          while ( have_posts() ) :
+                            the_post();
+
+                            the_content();
+
+                          endwhile; // End of the loop.
+                          ?>
                         </div>
                       </div>
                     </div>
