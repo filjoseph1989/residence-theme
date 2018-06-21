@@ -80,7 +80,7 @@ get_header();
 					</div>
 					<div class="cmsmasters_column one_third home_cards">
 						<div class="cmsmasters_column_inner" style=" height:  100%; ">
-							<div class="cmsmasters_featured_block" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/A1.jpg);">
+							<div class="cmsmasters_featured_block" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/projectvission-min.jpg);">
 								<div class="featured_block_inner">
 									<div class="featured_block_text">
 										Project Vision <br><br>
