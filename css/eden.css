@@ -12,14 +12,6 @@
 /***************** Start Theme Font Styles ******************/
 
 	/* Start Content Font */
-	body {
-		font-family:'Dosis', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-		font-size:18px;
-		line-height:28px;
-		font-weight:400;
-		font-style:normal;
-	}
-
 	code {
 		font-size:17px;
 		line-height:26px;
@@ -130,8 +122,6 @@
 	.cmsmasters_post_timeline .cmsmasters_post_day,
 	#header .search_wrap .search_bar_wrap .search_field input,
 	.logo .title {
-		font-family:'Cormorant', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-		font-size:50px;
 		line-height:58px;
 		font-weight:400;
 		font-style:normal;
@@ -225,22 +215,6 @@
 
 
 	/* Start H2 Font */
-	h2,
-	h2 a,
-	.cmsmasters_slider_project .cmsmasters_slider_project_header .cmsmasters_slider_project_title,
-	.cmsmasters_slider_project .cmsmasters_slider_project_header .cmsmasters_slider_project_title a,
-	.cmsmasters_counters .cmsmasters_counter_wrap .cmsmasters_counter .cmsmasters_counter_inner .cmsmasters_counter_counter_wrap,
-	.cmsmasters_stats.stats_mode_circles .cmsmasters_stat_wrap .cmsmasters_stat .cmsmasters_stat_inner .cmsmasters_stat_counter_wrap .cmsmasters_stat_counter,
-	.cmsmasters_sitemap_wrap .cmsmasters_sitemap > li > a {
-		font-family:'Cormorant', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-		font-size:40px;
-		line-height:46px;
-		font-weight:400;
-		font-style:normal;
-		text-transform:uppercase;
-		text-decoration:none;
-	}
-
 	.cmsmasters_counters .cmsmasters_counter_wrap .cmsmasters_counter .cmsmasters_counter_inner .cmsmasters_counter_counter_wrap {
 		font-size:56px;
 	}
@@ -248,14 +222,6 @@
 	.cmsmasters_counters .cmsmasters_counter_wrap .cmsmasters_counter.counter_has_icon .cmsmasters_counter_inner .cmsmasters_counter_counter_wrap,
 	.cmsmasters_counters .cmsmasters_counter_wrap .cmsmasters_counter.counter_has_image .cmsmasters_counter_inner .cmsmasters_counter_counter_wrap {
 		font-size:44px;
-	}
-
-	.cmsmasters_slider_project .cmsmasters_slider_project_header .cmsmasters_slider_project_title,
-	.cmsmasters_slider_project .cmsmasters_slider_project_header .cmsmasters_slider_project_title a,
-	.cmsmasters_archive_item_title a,
-	.cmsmasters_archive_item_title {
-		font-size:36px;
-		line-height:42px;
 	}
 
 	.cmsmasters_stats.stats_mode_circles .cmsmasters_stat_wrap .cmsmasters_stat .cmsmasters_stat_inner .cmsmasters_stat_counter_wrap .cmsmasters_stat_counter {
@@ -268,8 +234,6 @@
 	h3,
 	h3 a,
 	.cmsmasters_project_subtitle {
-		font-family:'Cormorant', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-		font-size:30px;
 		line-height:38px;
 		font-weight:400;
 		font-style:italic;
@@ -287,7 +251,6 @@
 	}
 
 	.cmsmasters_slider_project .cmsmasters_project_subtitle {
-		font-size:24px;
 		line-height:32px;
 	}
 	/* Finish H3 Font */
@@ -1777,7 +1740,6 @@
 	.cmsmasters_wrap_pagination ul li .page-numbers,
 	body,
 
-	.middle_inner,
 	.search_wrap .search_bar_wrap .search_field:before,
 	.search_wrap .search_bar_wrap .search_field:after,
 	.search_wrap .search_icon_close:before,
@@ -3514,7 +3476,6 @@
 	html .cmsmasters_color_scheme_first .widget_categories li,
 	html .cmsmasters_color_scheme_first .widget_archive li,
 	html .cmsmasters_color_scheme_first .widget_meta li,
-	html .cmsmasters_color_scheme_first .widget_text li,
 	html .cmsmasters_color_scheme_first .widget_recent_comments li,
 	html .cmsmasters_color_scheme_first .widget_recent_entries li,
 	html .cmsmasters_color_scheme_first .cmsmasters_slider_post .cmsmasters_slider_post_inner,

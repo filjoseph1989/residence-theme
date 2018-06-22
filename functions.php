@@ -122,19 +122,20 @@ add_action( 'widgets_init', 'eden_widgets_init' );
  * Enqueue scripts and styles.
  */
 function eden_scripts() {
-	wp_enqueue_style( 'googlefont2', 'https://fonts.googleapis.com/css?family=Dosis%3A300%2C400%2C500%2C700%7CCormorant%3A400%2C400i&#038;ver=4.9.5', false, '', 'screen');
+	// wp_enqueue_style( 'googlefont2', 'https://fonts.googleapis.com/css?family=Dosis%3A300%2C400%2C500%2C700%7CCormorant%3A400%2C400i&#038;ver=4.9.5', false, '', 'screen');
+	wp_enqueue_style( 'googlefont', 'https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:400,700&amp;subset=latin-ext', false, '', 'screen');
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css', false, '1.3.0', 'screen');
 
 	wp_enqueue_style( 'eden-css-style', get_template_directory_uri() . '/css/style.css', false, '1.0.0', 'screen, print');
 	wp_enqueue_style( 'eden-css-validationEngine.jquery', get_template_directory_uri() . '/css/validationEngine.jquery.css', false, '1.0.0', 'screen');
-	wp_enqueue_style( 'eden-css-carousel', get_template_directory_uri() . '/css/carousel.css', false, '1.1.0', 'screen');
+	wp_enqueue_style( 'eden-css-carousel', get_template_directory_uri() . '/css/carousel.css', false, '1.2.0', 'screen');
 	wp_enqueue_style( 'eden-css-eden', get_template_directory_uri() . '/css/eden.css', false, '1.0.0', 'screen');
 	wp_enqueue_style( 'eden-style-1', get_template_directory_uri() . '/css/style1.css', false, '1.0.0', 'screen');
 	wp_enqueue_style( 'eden-style-2', get_template_directory_uri() . '/css/style2.css', false, '1.0.0', 'screen');
 	wp_enqueue_style( 'eden-style-3', get_template_directory_uri() . '/css/adaptive.css', false, '1.0.0', 'screen');
-	wp_enqueue_style( 'eden-style-4', get_template_directory_uri() . '/css/hotel-lux.css', false, '1.0.0', 'screen');
+	wp_enqueue_style( 'eden-style-4', get_template_directory_uri() . '/css/hotel-lux.css', false, '1.1.0', 'screen');
 	wp_enqueue_style( 'eden-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'eden-master', get_template_directory_uri() . '/css/master.css', false, '1.57.0', 'screen');
+	wp_enqueue_style( 'eden-master', get_template_directory_uri() . '/css/master.css', false, '1.61.0', 'screen');
 
 	wp_enqueue_script( 'eden-waypoints', get_template_directory_uri(). '/js/waypoints.min.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-stellar', get_template_directory_uri(). '/js/stellar.min.js', array('jquery'), '20180529', true );

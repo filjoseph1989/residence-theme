@@ -134,11 +134,6 @@
 								Nestled within the upscale Al Andalus district in Jeddah’s Tahlia area, Eden Residence offers meticulously designed one, two and three bedroom residences with world-class shared amenities.
 								The project combines contemporary urban architecture with traditional cues to set a new benchmark for design, quality and liveability in Saudi Arabia.
 							</p>
-							<div class="">
-								<h4 class="">
-									<a href="/about-us">Reimagining Exclusivity</a>
-								</h4>
-							</div>
 						</div>
 					</div>
 				</div>

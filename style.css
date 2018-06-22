@@ -470,9 +470,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-size: contain; }
 
 #cmsmasters_fb_ef07ee5e3c .featured_block_inner {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto; }
+  /* width: 100%; */
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  }
 
 #cmsmasters_fb_ef07ee5e3c .featured_block_text {
   text-align: center; }

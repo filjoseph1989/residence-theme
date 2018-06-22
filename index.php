@@ -16,15 +16,13 @@ get_header();
 ?>
 
 	<div id="middle">
-		<article class=""></article>
-
 		<div class="middle_inner" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/eden_logo.png);"></div>
 
 		<div class="cmsmasters_row_inner header_content">
 			<div class="cmsmasters_row_margin">
 				<div class="cmsmasters_featured_block">
 					<div class="featured_block_inner">
-						<h2 class="">Welcome to urban living reimagined</h2>
+						<h1 class="">Welcome to urban living reimagined</h1>
 					</div>
 				</div>
 				<div class="cmsmasters_featured_block">
@@ -37,9 +35,10 @@ get_header();
 								The project combines contemporary urban architecture with traditional cues to set a new benchmark for design, quality and liveability in Saudi Arabia.
 							</p>
 							<div class="">
-								<h4 class="">
+								<br>
+								<h2 id="reimaging-exclusivity">
 									<a href="/about-us">Reimagining Exclusivity</a>
-								</h4>
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -96,20 +95,24 @@ get_header();
 			</div>
 		</div>
 
-		<div class="lifestyle-container">
-			<div class="cmsmasters_row_inner cmsmasters_heading_wrap cmsmasters_heading_align_center">
-				<h2 class="cmsmasters_heading">LIFESTYLE</h2>
-			</div>
-		</div>
-
 		<div class="cmsmasters_row_inner lifetyle-slider">
+			<div class="lifestyle-container">
+				<div class="cmsmasters_heading_wrap cmsmasters_row_inner" id="home-lifetyle-heading">
+					<h2 class="cmsmasters_heading"><span style="text-transform: uppercase;">L</span>IFESTYLE</h2>
+					<br><br>
+					<div>
+						<p>Eden Residence’s combination of lifestyle and retail delivers a unique proposition where residents benefit from essential services and convenience right at their doorstep.</p>
+					</div>
+				</div>
+			</div>
+
 			<div class="cmsmasters_row_margin">
-				<div id="cmsmasters_column_c1aac063b1" class="cmsmasters_column one_first">
+				<div class="cmsmasters_column one_first">
 					<div class="cmsmasters_column_inner">
 						<div class="cmsmasters_posts_slider">
 							<div id="cmsmasters_slider_7299fbac30" class="cmsmasters_owl_slider owl-carousel" data-items="1" data-pagination="true" data-navigation="false" data-single-item="false" data-auto-play="5000">
 								<div class="cmsmasters_owl_slider_item">
-									<article id="post-9410" class="cmsmasters_slider_project post-9410 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-queen pj-categs-room-services">
+									<article class="cmsmasters_slider_project">
 										<div class="cmsmasters_slider_project_outer">
 											<div class="project_img_wrap ">
 												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/bedroom2.jpg)"></div>
@@ -120,7 +123,7 @@ get_header();
 														<a href="#">Bed Room</a>
 													</h3>
 												</header>
-												<h3 class="cmsmasters_project_subtitle">A quality room</h3>
+												<h4 class="cmsmasters_project_subtitle">A quality room</h4>
 												<div class="cmsmasters_slider_project_content entry-content">
 													<p>Eden Residence offers one bedroom units designed intelligently to make the most of liveable space. An open urban concept amplifies airiness and floor area to create perfectly contained units for smaller families. </p>
 												</div>
@@ -133,31 +136,7 @@ get_header();
 									</article>
 								</div>
 								<div class="cmsmasters_owl_slider_item">
-									<article id="post-13193" class="cmsmasters_slider_project post-13193 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-cable-tv pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-room-services">
-										<div class="cmsmasters_slider_project_outer">
-											<div class="project_img_wrap ">
-												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/corridor.jpg)"></div>
-											</div>
-											<div class="cmsmasters_slider_project_inner">
-												<header class="cmsmasters_slider_project_header entry-header">
-													<h3 class="cmsmasters_slider_project_title entry-title">
-														<a href="#">Corridor</a>
-													</h3>
-												</header>
-												<h3 class="cmsmasters_project_subtitle">Corridor</h3>
-												<div class="cmsmasters_slider_project_content entry-content">
-													<p>The corridor of the residence</p>
-												</div>
-												<div class="cmsmasters_slider_project_info_wrap">
-													<span class="cmsmasters_project_price"></span>
-													<a class="" href="#"></a>
-												</div>
-											</div>
-										</div>
-									</article>
-								</div>
-								<div class="cmsmasters_owl_slider_item">
-									<article id="post-13294" class="cmsmasters_slider_project post-13294 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-cable-tv pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-room-services">
+									<article class="cmsmasters_slider_project">
 										<div class="cmsmasters_slider_project_outer">
 											<div class="project_img_wrap ">
 												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/interior.jpg)"></div>
@@ -181,7 +160,7 @@ get_header();
 									</article>
 								</div>
 								<div class="cmsmasters_owl_slider_item">
-									<article id="post-13224" class="cmsmasters_slider_project post-13224 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-cable-tv pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-queen">
+									<article class="cmsmasters_slider_project">
 										<div class="cmsmasters_slider_project_outer">
 											<div class="project_img_wrap ">
 												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/interior_penthouse.jpg)"></div>
@@ -205,7 +184,7 @@ get_header();
 									</article>
 								</div>
 								<div class="cmsmasters_owl_slider_item">
-									<article id="post-13253" class="cmsmasters_slider_project post-13253 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-cable-tv pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-room-services">
+									<article class="cmsmasters_slider_project">
 										<div class="cmsmasters_slider_project_outer">
 											<div class="project_img_wrap ">
 												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/living_room.jpg)"></div>
@@ -229,7 +208,7 @@ get_header();
 									</article>
 								</div>
 								<div class="cmsmasters_owl_slider_item">
-									<article id="post-13140" class="cmsmasters_slider_project post-13140 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-cable-tv pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-room-services">
+									<article class="cmsmasters_slider_project">
 										<div class="cmsmasters_slider_project_outer">
 											<div class="project_img_wrap ">
 												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/recreational3.jpg)"></div>
@@ -253,7 +232,7 @@ get_header();
 									</article>
 								</div>
 								<div class="cmsmasters_owl_slider_item">
-									<article id="post-13167" class="cmsmasters_slider_project post-13167 project type-project status-publish format-standard has-post-thumbnail hentry pj-categs-bathroom pj-categs-cable-tv pj-categs-conditioning pj-categs-hair-dryer pj-categs-mini-bar pj-categs-room-services">
+									<article class="cmsmasters_slider_project">
 										<div class="cmsmasters_slider_project_outer">
 											<div class="project_img_wrap ">
 												<div class="cmsmasters_atach_img" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/swimming_pool.jpg)"></div>
@@ -284,74 +263,71 @@ get_header();
 			</div>
 		</div>
 
-		<div class="" style="background-attachment: scroll;">
-			<div class="cmsmasters_row_inner appartment">
-				<h2 class="">Apartments</h2>
+		<div class="cmsmasters_row_inner">
+			<div class="lifestyle-container">
+				<div class="cmsmasters_row_inner cmsmasters_heading_wrap cmsmasters_heading_align_center" id="home-rooms-heading">
+					<h2 class="cmsmasters_heading">Apartments</h2>
+					<br>
+					<div>
+						<p>Apartments are designed for contemporary living, with comfort and homeliness taking centre stage. A bar counter separating the kitchen from the living area, while each unit also comes equipped with white goods and built-in closets.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div id="cmsmasters_row_41e40f680c" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_fullwidth">
-			<div class="cmsmasters_row_outer_parent">
-				<div class="cmsmasters_row_outer">
-					<div class="cmsmasters_row_inner cmsmasters_row_fullwidth">
-						<div class="cmsmasters_row_margin">
-							<div class="cmsmasters_column one_fourth rooms">
-								<div class="cmsmasters_column_inner">
-									<div id="cmsmasters_fb_ef07ee5e3c" class="cmsmasters_featured_block">
-										<div class="featured_block_inner">
-											<div class="featured_block_text">
-												<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-													<a href="<?php echo get_page_link(55); ?>">
-														<h2 class="cmsmasters_heading">One Bed Room</h2>
-													</a>
-												</div>
-											</div>
-										</div>
+			<div class="cmsmasters_row_margin">
+				<div class="cmsmasters_column one_fourth rooms">
+					<div class="cmsmasters_column_inner">
+						<div id="cmsmasters_fb_ef07ee5e3c" class="cmsmasters_featured_block">
+							<div class="featured_block_inner">
+								<div class="featured_block_text">
+									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+										<a href="<?php echo get_page_link(55); ?>">
+											<h2 class="cmsmasters_heading">One Bed Room</h2>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div class="cmsmasters_column one_fourth rooms">
-								<div class="cmsmasters_column_inner">
-									<div id="cmsmasters_fb_e81afc63a2" class="cmsmasters_featured_block">
-										<div class="featured_block_inner">
-											<div class="featured_block_text">
-												<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-													<a href="<?php echo get_page_link(57); ?>">
-														<h2 class="cmsmasters_heading">Two Bed Rooms</h2>
-													</a>
-												</div>
-											</div>
-										</div>
+						</div>
+					</div>
+				</div>
+				<div class="cmsmasters_column one_fourth rooms">
+					<div class="cmsmasters_column_inner">
+						<div id="cmsmasters_fb_e81afc63a2" class="cmsmasters_featured_block">
+							<div class="featured_block_inner">
+								<div class="featured_block_text">
+									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+										<a href="<?php echo get_page_link(57); ?>">
+											<h2 class="cmsmasters_heading">Two Bed Rooms</h2>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div class="cmsmasters_column one_fourth rooms">
-								<div class="cmsmasters_column_inner">
-									<div id="cmsmasters_fb_659c48ffe6" class="cmsmasters_featured_block">
-										<div class="featured_block_inner">
-											<div class="featured_block_text">
-												<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-													<a href="<?php echo get_page_link(59); ?>">
-														<h2 class="cmsmasters_heading">Three Bed Rooms</h2>
-													</a>
-												</div>
-											</div>
-										</div>
+						</div>
+					</div>
+				</div>
+				<div class="cmsmasters_column one_fourth rooms">
+					<div class="cmsmasters_column_inner">
+						<div id="cmsmasters_fb_659c48ffe6" class="cmsmasters_featured_block">
+							<div class="featured_block_inner">
+								<div class="featured_block_text">
+									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+										<a href="<?php echo get_page_link(59); ?>">
+											<h2 class="cmsmasters_heading">Three Bed Rooms</h2>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div class="cmsmasters_column one_fourth rooms">
-								<div class="cmsmasters_column_inner">
-									<div id="cmsmasters_fb_725e32fff3" class="cmsmasters_featured_block">
-										<div class="featured_block_inner">
-											<div class="featured_block_text">
-												<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-													<a href="<?php echo get_page_link(61); ?>">
-														<h2 class="cmsmasters_heading">Penthouses</h2>
-													</a>
-												</div>
-											</div>
-										</div>
+						</div>
+					</div>
+				</div>
+				<div class="cmsmasters_column one_fourth rooms">
+					<div class="cmsmasters_column_inner">
+						<div id="cmsmasters_fb_725e32fff3" class="cmsmasters_featured_block">
+							<div class="featured_block_inner">
+								<div class="featured_block_text">
+									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+										<a href="<?php echo get_page_link(61); ?>">
+											<h2 class="cmsmasters_heading">Penthouses</h2>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -360,6 +336,8 @@ get_header();
 				</div>
 			</div>
 		</div>
+
+		<br>
 	</div>
 
 </div> <!-- /main-->

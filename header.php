@@ -36,7 +36,8 @@
 							<div class="logo_wrap">
 								<a href="<?php esc_url( home_url( '/' ) ); ?>" title="Eden Residence" class="logo">
 									<div class="">
-										<img src="<?php echo bloginfo('template_url'); ?>/img/header_logo.png" alt="">
+										<img src="<?php echo bloginfo('template_url'); ?>/img/header_logo.svg" alt="">
+										<div class=""></div>
 									</div>
 								</a>
 								<a href="<?php esc_url( home_url( '/' ) ); ?>" title="Eden Residence" class="logo logo_small">

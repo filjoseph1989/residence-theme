@@ -2621,9 +2621,7 @@ button {
   text-align: center;
 }
 .header_mid .logo_wrap {
-  height: 100%;
   position: relative;
-  float: left;
 }
 .enable_header_centered .header_mid .logo_wrap {
   float: none;
@@ -2656,7 +2654,6 @@ button {
   max-height: 100%;
   width: auto;
   height: auto;
-  margin: auto !important;
   position: absolute;
   left: 0;
   right: auto;
@@ -2670,7 +2667,7 @@ button {
   display: none;
 }
 .header_mid .cmsmasters_header_button_wrap {
-  height: 100%;
+  /* height: 100%; */
   float: right;
 }
 .header_mid .cmsmasters_header_button_wrap .cmsmasters_header_button {
@@ -2692,7 +2689,6 @@ button {
 .header_mid .resp_mid_nav_wrap {
   height: 100%;
   margin: 0 0 0 20px;
-  position: relative;
   display: none;
   float: right;
   overflow: hidden;
@@ -5070,7 +5066,6 @@ hr,
 }
 .cmsmasters_heading_wrap .cmsmasters_heading {
   display: inline-block;
-  margin: 0;
 }
 .cmsmasters_heading_wrap .cmsmasters_heading:before,
 .cmsmasters_heading_wrap .cmsmasters_heading a:before {
@@ -7895,7 +7890,6 @@ body .nf-form-cont .label-hidden .nf-field-label {
   content: '';
   position: absolute;
   display: block;
-  width: 4px;
   height: 4px;
   right: 0;
   top: 50%;
@@ -10019,7 +10013,7 @@ html.csstransitions .cmsmasters_stats.stats_mode_bars.shortcode_animated .cmsmas
     opacity: 1;
   }
   #header .header_mid .mid_nav_wrap nav {
-    display: none;
+    /* display: none; */
   }
   #header .header_mid .search_wrap {
     float: none;
@@ -10386,13 +10380,6 @@ html.csstransitions .cmsmasters_stats.stats_mode_bars.shortcode_animated .cmsmas
   }
   #header .header_mid .header_mid_inner {
     padding: 12px 0 0;
-    text-align: center;
-  }
-  #header .header_mid .header_mid_inner .logo_wrap {
-    display: block;
-    width: auto;
-    float: none;
-    margin: 0 0 15px;
     text-align: center;
   }
   #header .header_mid .header_mid_inner .logo_wrap:after {

@@ -481,7 +481,7 @@
     padding: 0;
   }
   #header .header_mid .resp_mid_nav_wrap {
-    display: block;
+    /* display: block; */
   }
   .enable_header_centered #header .header_mid .resp_mid_nav_wrap {
     float: none;
@@ -562,7 +562,7 @@
     opacity: 1;
   }
   #header .header_mid .mid_nav_wrap nav {
-    display: none;
+    /* display: none; */
   }
   #header .header_mid .search_wrap {
     float: none;
@@ -929,13 +929,6 @@
   }
   #header .header_mid .header_mid_inner {
     padding: 12px 0 0;
-    text-align: center;
-  }
-  #header .header_mid .header_mid_inner .logo_wrap {
-    display: block;
-    width: auto;
-    float: none;
-    margin: 0 0 15px;
     text-align: center;
   }
   #header .header_mid .header_mid_inner .logo_wrap:after {
