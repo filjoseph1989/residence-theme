@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<div id="middle">
+	<div id="middle" class="middle-home">
 		<div class="middle_inner" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/eden_logo.png);"></div>
 
 		<div class="cmsmasters_row_inner header_content">
@@ -240,7 +240,7 @@ get_header();
 											<div class="cmsmasters_slider_project_inner">
 												<header class="cmsmasters_slider_project_header entry-header">
 													<h3 class="cmsmasters_slider_project_title entry-title">
-														<a href="#">Swimmiing Pool</a>
+														<a href="#">Swimming Pool</a>
 													</h3>
 												</header>
 												<h3 class="cmsmasters_project_subtitle">A swimming pool</h3>
@@ -280,7 +280,7 @@ get_header();
 							<div class="featured_block_inner">
 								<div class="featured_block_text">
 									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-										<a href="<?php echo get_page_link(55); ?>">
+										<a href="<?php echo get_page_link(41); ?>">
 											<h2 class="cmsmasters_heading">One Bed Room</h2>
 										</a>
 									</div>
@@ -295,7 +295,7 @@ get_header();
 							<div class="featured_block_inner">
 								<div class="featured_block_text">
 									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-										<a href="<?php echo get_page_link(57); ?>">
+										<a href="<?php echo get_page_link(43); ?>">
 											<h2 class="cmsmasters_heading">Two Bed Rooms</h2>
 										</a>
 									</div>
@@ -310,7 +310,7 @@ get_header();
 							<div class="featured_block_inner">
 								<div class="featured_block_text">
 									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-										<a href="<?php echo get_page_link(59); ?>">
+										<a href="<?php echo get_page_link(45); ?>">
 											<h2 class="cmsmasters_heading">Three Bed Rooms</h2>
 										</a>
 									</div>
@@ -325,7 +325,7 @@ get_header();
 							<div class="featured_block_inner">
 								<div class="featured_block_text">
 									<div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-										<a href="<?php echo get_page_link(61); ?>">
+										<a href="<?php echo get_page_link(47); ?>">
 											<h2 class="cmsmasters_heading">Penthouses</h2>
 										</a>
 									</div>

@@ -113,7 +113,6 @@
 
 
 	/* Start H1 Font */
-	h1,
 	h1 a,
 	.cmsmasters_header_search_form input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
 	.cmsmasters_pricing_table .cmsmasters_currency,
@@ -5700,12 +5699,11 @@
 
 	/* Start Navigation Title Link Current Color */
 	@media only screen and (min-width: 1025px) {
-		ul.navigation > li.menu-item.current-menu-item > a,
 		ul.navigation > li.menu-item.current-menu-item > a .nav_subtitle,
 		ul.navigation > li.menu-item.current-menu-ancestor > a,
 		ul.navigation > li.menu-item.current-menu-ancestor > a .nav_subtitle,
 		ul.navigation > li > a .nav_tag {
-			color:#1c1c1c;
+			/* color:#1c1c1c; */
 		}
 	}
 	/* Finish Navigation Title Link Current Color */

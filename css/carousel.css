@@ -438,7 +438,7 @@ nav > div > ul li {
   z-index: 203;
 }
 nav > div > ul li:hover {
-  z-index: 204;
+  z-index: 195;
 }
 nav > div > ul a {
   display: block;
@@ -1356,7 +1356,7 @@ img.alignnone {
   display: block;
   width: 100%;
   height: 0;
-  padding-bottom: 58.14%;
+  /* padding-bottom: 58.14%; */
   position: relative;
   text-align: center;
 }
@@ -9615,7 +9615,6 @@ html.csstransitions .cmsmasters_stats.stats_mode_bars.shortcode_animated .cmsmas
   #header nav {
     height: auto;
   }
-  #header nav div,
   #header nav ul,
   #header nav li,
   #header nav a,
@@ -10001,16 +10000,6 @@ html.csstransitions .cmsmasters_stats.stats_mode_bars.shortcode_animated .cmsmas
     -ms-transform-origin: 0 0;
     -o-transform-origin: 0 0;
     transform-origin: 0 0;
-  }
-  #header .header_mid .mid_nav_wrap {
-    display: block;
-    height: auto;
-    float: none;
-    margin: 0;
-    visibility: visible;
-    overflow: hidden;
-    clear: both;
-    opacity: 1;
   }
   #header .header_mid .mid_nav_wrap nav {
     /* display: none; */
@@ -10848,11 +10837,6 @@ html.csstransitions .cmsmasters_stats.stats_mode_bars.shortcode_animated .cmsmas
 	only screen and (min--moz-device-pixel-ratio: 1.5),
 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	only screen and (min-resolution: 144dpi) {
-
-	.header_mid .logo_wrap .logo img,
-	.cmsmasters_footer_default .footer_logo img {
-		display:none;
-	}
 
 	.header_mid .logo_wrap .logo .logo_retina,
 	.cmsmasters_footer_default .footer_logo > .footer_logo_retina {

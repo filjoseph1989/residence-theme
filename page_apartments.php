@@ -13,7 +13,7 @@ get_header();
 ?>
  	<div id="middle">
     <div class="headline cmsmasters_color_scheme_default">
-      <div class="headline_outer">
+      <div class="headline_outer" id="apartment">
         <div class="headline_color"></div>
         <div class="headline_inner align_center">
           <div class="headline_aligner"></div>
@@ -38,44 +38,33 @@ get_header();
       </div>
     </div>
 
-    <div class="cmsmasters_row">
-      <div class="cmsmasters_row_outer_parent penthouse">
-        <div class="cmsmasters_row_inner">
-          <div class="cmsmasters_row_margin cmsmasters_11">
-            <div class="cmsmasters_column one_first window">
-              <img src="<?php echo bloginfo('template_url'); ?>/img/charchar/untensils.png" alt="">
-            </div>
-          </div>
-        </div>
+    <section class="section-1 section-flex section-location section-flex--column">
+      <div class="section-1-one">
+        <img src="<?php echo bloginfo('template_url'); ?>/img/charchar/chairtwo.png" alt="chair image">
       </div>
-    </div>
-
-    <div class="cmsmasters_row">
-      <div class="cmsmasters_row_outer_parent penthouse">
-        <div class="cmsmasters_row_inner">
-          <div class="cmsmasters_row_margin cmsmasters_11">
-            <div class="cmsmasters_column one_first">
-              <div class="cmsmasters_featured_block">
-                <div class="featured_block_inner">
-                  <div class="featured_block_text">
-                    <?php
-                    while ( have_posts() ) :
-                      the_post();
-
-                      the_content();
-
-                    endwhile; // End of the loop.
-                    ?>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="section-1-two section-apartment">
+        <h1>intelligent apartment design for convenient living</h1>
       </div>
-    </div>
+    </section>
 
-    <br><br>
+    <section class="section-2 section-flex">
+      <div class="">
+        <article <?php post_class(); ?>>
+          <div class="entry-content">
+            <?php
+            while ( have_posts() ) :
+              the_post();
+
+              the_content();
+
+            endwhile; // End of the loop.
+            ?>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <br>
 
  	</div>
 

@@ -20,7 +20,7 @@
 				<aside id="custom-contact-info-3" class="widget widget_custom_contact_info_entries">
 					<h3 class="widgettitle">Info</h3>
 					<div class="icons">
-						<p><i class="fas fa-map-marker"></i> Jeddah's Upscale Al Andalus Detrict</p>
+						<p><i class="fas fa-map-marker"></i> Jeddah's Upscale Al Andalus Destrict</p>
 					</div>
 					<div class="icons">
 						<p><i class="fas fa-envelope"></i> info@eden-residence.com</p>
@@ -103,7 +103,6 @@
 			</div>
 			<div class="footer_logo_wrap">
 				<a href="#" title="Eden Residence" class="footer_logo">
-					<img src="<?php echo bloginfo('template_url'); ?>/img/eden_logo.png" alt="Eden Residence" style="width:  300px;" >
 					<img class="footer_logo_retina" src="<?php echo bloginfo('template_url'); ?>/img/eden_logo.png" alt="Eden Residence" width="200" height="70" >
 				</a>
 			</div>
@@ -244,6 +243,9 @@
 					</div>
 				</div>
 				<div class="cmsmasters_featured_block">
+					<div class="pargraph-1">
+						<p>Eden Residence is unique in bringing sophisticated compound living to the very heart of the city. Here, residents benefit from a premium address in Jeddah’s most desirable area – with a world of food and shopping practically on the doorstep.</p>
+					</div>
 					<img src="<?php echo bloginfo('template_url'); ?>/img/location.svg" alt="Location">
 				</div>
 			</div>
@@ -253,19 +255,13 @@
 
 <span class="cmsmasters_responsive_width"></span>
 
-<!--
-<div class="popmodal">
-	<div class="popmodal-content">
-		<span class="popclose-button">&times;</span>
-		<h1>Keep in touch with us</h1>
-		<?php // echo do_shortcode('[wpforms id="84" title="false" description="false"]'); ?>
-		<?php // echo do_shortcode('[wpforms id="65" title="false" description="false"]'); ?>
-	</div>
-</div>
--->
-
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <?php wp_footer(); ?>
+
+<script>
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/142995/script.js');
+</script>
 
 </body>
 </html>
