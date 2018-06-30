@@ -64,396 +64,47 @@ get_header();
       </div>
     </section>
 
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B1.jpg" class="" alt="B1">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 1</h2>
-                  <h4>2 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Ground Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 106 m<sup>2</sup></strong> <br>
-                    <strong>Garden Area: 51 m</strong>
-                  </p>
+    <?php $posts = my_get_posts( 'bedroom-2', 10 ); ?>
+
+    <?php if ($posts !== false): ?>
+
+      <?php foreach ($posts as $key => $value): ?>
+
+        <section class="section-2 section-flex">
+          <div class="section-one-bedroom section-flex one-bedroom">
+
+            <?php foreach ($value as $post): setup_postdata( $post ); ?>
+              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'large'); ?>
+
+              <div class="">
+                <div class="column-1">
+                  <a href="<?php echo get_permalink( get_the_ID() ); ?>">
+                    <div class="project_img_wrap">
+                      <figure class="">
+                        <img src="<?php echo $image[0]; ?>" alt="thumbnail">
+                      </figure>
+                    </div>
+                  </a>
+                  <div class="">
+                    <article <?php post_class(); ?>>
+                      <header class="entry-header">
+                        <h2 class="entry-title"><?php echo $post->post_title; ?></h2>
+                      </header>
+                      <div class="entry-content">
+                        <?php echo $post->post_content; ?>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B2.jpg" class="" alt="B2">
-                </figure>
               </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 2</h2>
-                  <h4>2 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    First and Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 107 m<sup>2</sup></strong> <br>
-                  </p>
-                </div>
-              </article>
-            </div>
+            <?php endforeach; ?>
+
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <br>
+      <?php endforeach; ?>
 
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B3.jpg" class="" alt="B3">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 3</h2>
-                  <h4>2 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Ground Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 106 m<sup>2</sup></strong> <br>
-                    <strong>Garden Area: 28 m<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B4.jpg" class="" alt="B4">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 4</h2>
-                  <h4>2 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Ground Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 107 m<sup>2</sup></strong> <br>
-                    <strong>Garden Area : 39 m<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <br>
-
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B5.jpg" class="" alt="B5">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 5</h2>
-                  <h4>2 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Ground Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 110 m<sup>2</sup></strong> <br>
-                    <strong>Garden Area: 29 mm<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height" id="b6">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B6.jpg" class="" alt="B6">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 6</h2>
-                  <h4>2 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Ground Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 103 m<sup>2</sup></strong> <br>
-                    <strong>Garden Area: 30 m<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <br>
-
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height-2">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B7.jpg" class="" alt="B7">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 7</h2>
-                  <h4>2 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 1 Master Bedrooms </li>
-                    <li>  Second Bedroom </li>
-                    <li> 1 Bathroom en suite </li>
-                    <li> 1 Shared Bathroom </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 105 m<sup>2</sup></strong> <br>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B8.jpg" class="" alt="B8">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 8</h2>
-                  <h4>2 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 4 <br>
-                    First and Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area</li>
-                    <li> 2 Master Bedrooms</li>
-                    <li> 2 Bathroom en suite</li>
-                    <li> 1 Guest Toilet</li>
-                    <li> Maid room</li>
-                    <li> Parking</li>
-                    <li> Driver’s room (optional)</li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 107 m<sup>2</sup></strong> <br>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <br>
-
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height-3" id="b9">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/twobedrooms/B9.jpg" class="" alt="B9">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type B- 9</h2>
-                  <h4>2 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    First and Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 2 Master Bedrooms </li>
-                    <li> 2 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid room </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 132 m<sup>2</sup></strong> <br>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class=""> </div>
-      </div>
-    </section>
+    <?php endif; ?>
 
     <br>
  	</div>

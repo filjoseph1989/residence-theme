@@ -30,7 +30,7 @@
 						<div class="header_mid_inner">
 							<div class="cmsmasters_header_button_wrap">
 								<a href="#requestResidenceModal" id="request-residence" class="cmsmasters_header_button">
-									<span>RESIDENCE REQUEST</span>
+									REQUEST RESIDENCE
 								</a>
 							</div>
 							<div class="logo_wrap">

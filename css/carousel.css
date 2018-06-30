@@ -3169,9 +3169,6 @@ body .headline {
   display: inline-block;
   margin: 0;
 }
-.cmsmasters_footer_default .footer_logo > .footer_logo_retina {
-  display: none;
-}
 .cmsmasters_footer_default .footer_custom_html_wrap {
   padding: 20px 0 0;
   position: relative;

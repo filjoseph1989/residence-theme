@@ -125,6 +125,7 @@ function eden_scripts() {
 	wp_enqueue_style( 'googlefont', 'https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:400,700&amp;subset=latin-ext', false, '', 'screen');
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css', false, '1.3.0', 'screen');
 
+	wp_enqueue_style( 'eden-tooltip', get_template_directory_uri() . '/css/tooltipster.bundle.min.css', false, '1.1.0', 'screen');
 	wp_enqueue_style( 'eden-css-style', get_template_directory_uri() . '/css/style.css', false, '1.0.0', 'screen, print');
 	wp_enqueue_style( 'eden-css-validationEngine.jquery', get_template_directory_uri() . '/css/validationEngine.jquery.css', false, '1.0.0', 'screen');
 	wp_enqueue_style( 'eden-css-carousel', get_template_directory_uri() . '/css/carousel.css', false, '1.3.0', 'screen');
@@ -134,8 +135,9 @@ function eden_scripts() {
 	wp_enqueue_style( 'eden-style-3', get_template_directory_uri() . '/css/adaptive.css', false, '1.1.0', 'screen');
 	wp_enqueue_style( 'eden-style-4', get_template_directory_uri() . '/css/hotel-lux.css', false, '1.1.0', 'screen');
 	wp_enqueue_style( 'eden-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'eden-master', get_template_directory_uri() . '/css/master.css', false, '1.70.0', 'screen');
+	wp_enqueue_style( 'eden-master', get_template_directory_uri() . '/css/master.css', false, '1.82.0', 'screen');
 
+	wp_enqueue_script( 'eden-tooltip-js', get_template_directory_uri(). '/js/tooltipster.bundle.min.js', array('jquery'), '1.1.0', true );
 	wp_enqueue_script( 'eden-waypoints', get_template_directory_uri(). '/js/waypoints.min.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-stellar', get_template_directory_uri(). '/js/stellar.min.js', array('jquery'), '20180529', true );
 	wp_enqueue_script( 'eden-customize', get_template_directory_uri(). '/js/customize.js', array('jquery'), '20180529', true );
@@ -145,7 +147,7 @@ function eden_scripts() {
 	wp_enqueue_script( 'eden-jquery', get_template_directory_uri(). '/js/jquery.script.js', array('jquery'), '20180614', true );
 	wp_enqueue_script( 'eden-jquery.theme-script', get_template_directory_uri(). '/js/jquery.theme-script.js', array('jquery'), '20180609', true );
 	wp_enqueue_script( 'eden-animatedModal', get_template_directory_uri(). '/js/animatedModal.min.js', array('jquery'), '20180612', true );
-	wp_enqueue_script( 'modals', get_template_directory_uri(). '/js/modals.js', array('jquery'), '20180614', true );
+	wp_enqueue_script( 'modals', get_template_directory_uri(). '/js/modals.js', array('jquery'), '20180630', true );
 
 	wp_enqueue_script( 'eden-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'eden-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

@@ -20,7 +20,7 @@
 				<aside id="custom-contact-info-3" class="widget widget_custom_contact_info_entries">
 					<h3 class="widgettitle">Info</h3>
 					<div class="icons">
-						<p><i class="fas fa-map-marker"></i> Jeddah's Upscale Al Andalus Destrict</p>
+						<p><i class="fas fa-map-marker"></i> Jeddah's Upscale Al Andalus District</p>
 					</div>
 					<div class="icons">
 						<p><i class="fas fa-envelope"></i> info@eden-residence.com</p>
@@ -247,6 +247,52 @@
 						<p>Eden Residence is unique in bringing sophisticated compound living to the very heart of the city. Here, residents benefit from a premium address in Jeddah’s most desirable area – with a world of food and shopping practically on the doorstep.</p>
 					</div>
 					<img src="<?php echo bloginfo('template_url'); ?>/img/location.svg" alt="Location">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="brochure tooltip" title="Download Brochure">
+	<a href="#downloadBrochuresModal" id="download-brochue">
+		<i class="fas fa-file-pdf"></i>
+	</a>
+</div>
+
+<div id="downloadBrochuresModal">
+	<div class="close-downloadBrochuresModal">
+		<i class="fas fa-times"></i>
+	</div>
+
+	<?php $posts = my_get_posts( 'downloadable', 10, false); ?>
+
+	<div class="modal-content">
+		<div class="cmsmasters_row_inner header_content">
+			<div class="cmsmasters_row_margin cmsmasters_11">
+				<div class="cmsmasters_featured_block">
+					<div class="featured_block_inner">
+						<h2 class="">Available Brochures to download</h2>
+					</div>
+				</div>
+				<div class="cmsmasters_featured_block">
+					<table>
+						<thead>
+							<tr>
+								<th>Button</th>
+								<th>Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php foreach ($posts->posts as $key => $value): ?>
+								<tr>
+									<td width="200px">
+										<button type="button" class="btn btn-default"><?php echo $value->post_content; ?></button>
+									</td>
+									<td><?php echo $value->post_title; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

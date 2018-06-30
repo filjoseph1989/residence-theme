@@ -64,266 +64,47 @@ get_header();
       </div>
     </section>
 
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/threebedrooms/C1.jpg" class="" alt="">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type C- 1</h2>
-                  <h4>3 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Ground Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 3 Master Bedrooms </li>
-                    <li> 1 Bathroom en suite </li>
-                    <li> 1 Shared Bathroom </li>
-                    <li> Guest Toilet </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 108 m<sup>2</sup></strong> <br>
-                    <strong>Terrace Area: 32 m</strong>
-                  </p>
+    <?php $posts = my_get_posts( 'bedroom-3', 10 ); ?>
+
+    <?php if ($posts !== false): ?>
+
+      <?php foreach ($posts as $key => $value): ?>
+
+        <section class="section-2 section-flex">
+          <div class="section-one-bedroom section-flex one-bedroom">
+
+            <?php foreach ($value as $post): setup_postdata( $post ); ?>
+              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'large'); ?>
+
+              <div class="">
+                <div class="column-1">
+                  <a href="<?php echo get_permalink( get_the_ID() ); ?>">
+                    <div class="project_img_wrap">
+                      <figure class="">
+                        <img src="<?php echo $image[0]; ?>" alt="thumbnail">
+                      </figure>
+                    </div>
+                  </a>
+                  <div class="">
+                    <article <?php post_class(); ?>>
+                      <header class="entry-header">
+                        <h2 class="entry-title"><?php echo $post->post_title; ?></h2>
+                      </header>
+                      <div class="entry-content">
+                        <?php echo $post->post_content; ?>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/threebedrooms/C2.jpg" class="" alt="">
-                </figure>
               </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type C- 2</h2>
-                  <h4>3 Bedroom Apartment with Garden</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Third Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 3 Master Bedrooms </li>
-                    <li> 1 Bathroom en suite </li>
-                    <li> 1 Shared Bathroom </li>
-                    <li> Guest Toilet </li>
-                    <li> Maid Room </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 136 m<sup>2</sup></strong> <br>
-                    <strong>Terrace Area: 45 m</strong>
-                  </p>
-                </div>
-              </article>
-            </div>
+            <?php endforeach; ?>
+
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <br>
+      <?php endforeach; ?>
 
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/threebedrooms/C3.jpg" class="" alt="">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type C-3</h2>
-                  <h4>3 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 4 <br>
-                    First and Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 1 Master Bedrooms </li>
-                    <li> 2 Bedrooms </li>
-                    <li> 1 Bathroom en suite </li>
-                    <li> 1 Shared Bathroom </li>
-                    <li> Guest Toilet </li>
-                    <li> Maid Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 136 m<sup>2</sup></strong> <br>
-                    <strong>Terrace Area: 32 m<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height" id="c4">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/threebedrooms/C4.jpg" class="" alt="C4">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type C-4</h2>
-                  <h4>3 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 4 <br>
-                    First and Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 3 Master Bedrooms </li>
-                    <li> 3 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 159 m<sup>2</sup></strong> <br>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <br>
-
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap" id="c5">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/threebedrooms/C5.jpg" class="" alt="">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type C-5</h2>
-                  <h4>3 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 4 <br>
-                    First and Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 3 Master Bedrooms </li>
-                    <li> 1 Bathroom en suite </li>
-                    <li> 1 Guest Toilet </li>
-                    <li>  Maid Room </li>
-                    <li> Laundry Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 143 m<sup>2</sup></strong> <br>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap extra-height" id="c6">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/threebedrooms/C6.jpg" class="" alt="">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type C-6</h2>
-                  <h4>3 Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 2 <br>
-                    Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area  </li>
-                    <li> 1 Master Bedrooms </li>
-                    <li> 2 Bedrooms </li>
-                    <li> 1 Bathroom en suite </li>
-                    <li> 1 Shared Bathroom </li>
-                    <li> 1 Guest Toilet </li>
-                    <li> Maid Room </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional) </li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 108 m<sup>2</sup></strong> <br>
-                    <strong>Terrace Area: 32 m<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php endif; ?>
 
     <br>
  	</div>

@@ -68,9 +68,27 @@ h1 {
     .middle_content.entry .call-to-action-wrapper .two {
       margin-left: 10px; }
 
-@media (min-width: 320px) {
+.middle-home .lifetyle-slider {
+  background-color: #f2f2f2;
+  width: 100%; }
+  @media (min-width: 320) {
+    .middle-home .lifetyle-slider {
+      padding: 0 170px; } }
+  @media (min-width: 1023px) {
+    .middle-home .lifetyle-slider {
+      padding: 0 170px; } }
+.middle-home .tour {
+  font-family: 'Great Vibes', cursive;
+  text-transform: capitalize;
+  font-weight: 700; }
+  .middle-home .tour h1 {
+    font-size: 50px !important; }
+@media (min-width: 320px) and (max-width: 1023px) {
   .middle-home {
     padding-top: 20px !important; } }
+@media (min-width: 1024px) {
+  .middle-home {
+    padding-top: 70px !important; } }
 
 #middle {
   padding-top: 80px; }
@@ -508,6 +526,8 @@ div[class^='close-'] {
 
 .section-2 {
   justify-content: center; }
+  .section-2 .entry-content h4 {
+    font-family: 'Great Vibes', cursive; }
   .section-2 .section-2-two {
     position: relative; }
     .section-2 .section-2-two .section-2-pargraph {
@@ -617,19 +637,19 @@ div[class^='close-'] {
     .section-2 .section-one-bedroom > div .column-1 .entry-content p {
       position: relative; }
     .section-2 .section-one-bedroom > div .column-1 .project_img_wrap {
-      height: 400px;
+      height: 300px;
       display: flex;
       border: 1px solid teal;
       justify-content: center; }
-      @media (min-width: 320px) {
-        .section-2 .section-one-bedroom > div .column-1 .project_img_wrap {
-          height: 360px; } }
-      @media (min-width: 576px) {
-        .section-2 .section-one-bedroom > div .column-1 .project_img_wrap {
-          height: 400px; } }
-      .section-2 .section-one-bedroom > div .column-1 .project_img_wrap figure img {
-        width: 350px;
-        margin: 0 auto; }
+      .section-2 .section-one-bedroom > div .column-1 .project_img_wrap:hover {
+        height: auto; }
+      .section-2 .section-one-bedroom > div .column-1 .project_img_wrap figure {
+        background-image: none !important;
+        overflow: hidden; }
+        .section-2 .section-one-bedroom > div .column-1 .project_img_wrap figure img {
+          max-width: 350px;
+          margin: 0 auto;
+          width: 100%; }
     @media (min-width: 320px) {
       .section-2 .section-one-bedroom > div .column-1 .entry-content {
         margin-bottom: 30px; } }
@@ -772,6 +792,15 @@ section[class^="section"] > div {
   .modal-content .cmsmasters_featured_block .pargraph-1 p {
     font-size: 16px;
     text-align: center; }
+.modal-content .btn:hover {
+  background-color: #00675f !important;
+  color: white; }
+.modal-content .btn a {
+  font-family: 'Raleway', sans-serif !important;
+  color: black !important; }
+  .modal-content .btn a:hover {
+    position: relative;
+    color: white !important; }
 
 #lifetyle {
   background: url(../img/lifestyle.jpg); }
@@ -788,6 +817,53 @@ section[class^="section"] > div {
   @media (min-width: 320px) and (max-width: 767px) {
     .headline_outer .headline_inner .headline_text .entry-title {
       font-size: 25px; } }
+
+.tnp-field-button .tnp-submit {
+  padding: 15px 20px !important;
+  color: white !important; }
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .post .section-flex {
+    flex-direction: column; } }
+.post .entry-title {
+  font-family: 'Raleway', sans-serif; }
+.post .post-thumbnail {
+  width: 50%;
+  margin-right: 20px; }
+.post .posted-on time {
+  font-family: 'Raleway', sans-serif; }
+.post .posted-on .updated {
+  color: #999999;
+  font-size: 12px;
+  line-height: 26px;
+  margin: 0 10px; }
+.post .author a,
+.post .cat-links a {
+  color: #999999;
+  font-size: 12px;
+  line-height: 26px;
+  text-transform: capitalize; }
+
+.cmsmasters_slider_project_inner {
+  background-color: white !important; }
+
+.brochure {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  z-index: 1;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gainsboro;
+  box-shadow: 0px 1px darkgrey;
+  font-size: 20px;
+  color: black; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .brochure {
+      top: 190px; } }
 
 @media (min-width: 320px) {
   .middle_inner {

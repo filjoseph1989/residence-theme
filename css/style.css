@@ -263,6 +263,7 @@ img {
 }
 figure {
   background-image: none !important;
+  overflow:  hidden;
 }
 fieldset {
   margin: 25px 2px 30px;

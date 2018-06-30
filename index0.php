@@ -23,10 +23,6 @@ get_header();
 				<div class="cmsmasters_featured_block">
 					<div class="featured_block_inner">
 						<h1 class="">Welcome to urban living reimagined</h1>
-						<br><br>
-						<h2 id="reimaging-exclusivity">
-							<a href="/about-us">Reimagining Exclusivity</a>
-						</h2>
 					</div>
 				</div>
 				<div class="cmsmasters_featured_block">
@@ -38,18 +34,72 @@ get_header();
 								Nestled within the upscale Al Andalus district in Jeddah’s Tahlia area, Eden Residence offers meticulously designed one, two and three bedroom residences with world-class shared amenities.
 								The project combines contemporary urban architecture with traditional cues to set a new benchmark for design, quality and liveability in Saudi Arabia.
 							</p>
+							<div class="">
+								<br>
+								<h2 id="reimaging-exclusivity">
+									<a href="/about-us">Reimagining Exclusivity</a>
+								</h2>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<br><br><br>
+		<!--
+		<div class="cmsmasters_row_bot_default cmsmasters_row_top_default" style="background-attachment: scroll;">
+			<div class="cmsmasters_row_inner">
+				<div class="cmsmasters_row_margin">
+					<div class="cmsmasters_column one_third home_cards">
+						<div class="cmsmasters_column_inner">
+							<div class="cmsmasters_featured_block" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/scene-recovered.jpg);">
+								<div class="featured_block_inner">
+									<div class="featured_block_text">
+										The Project <br><br>
+										<a href="#theprojectModal" id="theproject">
+											<button type="button" class="btn btn-default">Learn More </button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cmsmasters_column one_third home_cards">
+						<div class="cmsmasters_column_inner" style=" height:  100%; ">
+							<div class="cmsmasters_featured_block" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/building.png);">
+								<div class="featured_block_inner">
+									<div class="featured_block_text">
+										<span>Architecture</span> <br><br>
+										<a href="#arhitectureModal" id="modal-architecture">
+											<button type="button" class="btn btn-default">Learn More</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cmsmasters_column one_third home_cards">
+						<div class="cmsmasters_column_inner" style=" height:  100%; ">
+							<div class="cmsmasters_featured_block" style="background-image: url(<?php echo bloginfo('template_url'); ?>/img/projectvission-min.jpg);">
+								<div class="featured_block_inner">
+									<div class="featured_block_text">
+										Project Vision <br><br>
+										<a href="#projectVisitionModal" id="projectVisition">
+											<button type="button" class="btn btn-default">Learn More</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		-->
 
 		<div class="cmsmasters_row_inner lifetyle-slider">
 			<div class="lifestyle-container">
 				<div class="cmsmasters_heading_wrap cmsmasters_row_inner" id="home-lifetyle-heading">
-					<br><br>
 					<h2 class="cmsmasters_heading"><span style="text-transform: uppercase;">L</span>IFESTYLE</h2>
 					<br><br>
 					<div>
@@ -215,13 +265,11 @@ get_header();
 			</div>
 		</div>
 
-		<br><br><br>
-
 		<div class="cmsmasters_row_inner">
 			<div class="lifestyle-container">
 				<div class="cmsmasters_row_inner cmsmasters_heading_wrap cmsmasters_heading_align_center" id="home-rooms-heading">
 					<h2 class="cmsmasters_heading">Apartments</h2>
-					<br><br>
+					<br>
 					<div>
 						<p>Apartments are designed for contemporary living, with comfort and homeliness taking centre stage. A bar counter separating the kitchen from the living area, while each unit also comes equipped with white goods and built-in closets.</p>
 					</div>
@@ -291,28 +339,7 @@ get_header();
 			</div>
 		</div>
 
-		<br><br>
-
-		<section class="section-1 section-flex section-location section-flex--column">
-			<div class="section-1-two tour">
-				<h1 style="">Take our virtual tour</h1>
-			</div>
-		</section>
-
-		<section class="section-2 section-flex">
-			<div class="">
-				<article <?php post_class(); ?>>
-					<div class="entry-content section-flex section-flex--column">
-						<p>Explore the innovation, quality and detail inherent to Eden Residence with a virtual tour that shows you why it sets new standards for liveable urban luxury in Saudi Arabia.</p>
-						<div class="tour">
-							<iframe width='853' height='480' src='https://my.matterport.com/show/?m=WdT5ePYGUuG&brand=0' frameborder='0' allowfullscreen allow='vr'></iframe>
-						</div>
-					</div>
-				</article>
-			</div>
-		</section>
-
-		<br><br>
+		<br>
 	</div>
 
 </div> <!-- /main-->

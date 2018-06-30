@@ -64,83 +64,43 @@ get_header();
       </div>
     </section>
 
-    <section class="section-2 section-flex">
-      <div class="section-one-bedroom section-flex one-bedroom">
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/onebedrooms/A1.jpg" alt="A1">
-                </figure>
-              </div>
-            </a>
-            <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type A- 1</h2>
-                  <h4>One Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 6 <br>
-                    Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 1 Bedroom </li>
-                    <li> Toilet </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 59 m<sup>2</sup></strong>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+    <?php $posts = my_get_posts( 'bedroom-1', 10 ); ?>
 
-        <div class="">
-          <div class="column-1">
-            <a href="#">
-              <div class="project_img_wrap">
-                <figure class="">
-                  <img src="<?php echo bloginfo('template_url'); ?>/img/apartments/onebedrooms/A1.jpg" alt="A1">
-                </figure>
-              </div>
-            </a>
+    <?php foreach ($posts as $key => $value): ?>
+
+      <section class="section-2 section-flex">
+        <div class="section-one-bedroom section-flex one-bedroom">
+
+          <?php foreach ($value as $post): setup_postdata( $post ); ?>
+            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'large'); ?>
+
             <div class="">
-              <article <?php post_class(); ?>>
-                <header class="entry-header">
-                  <h2 class="entry-title">Apartment Type A- 1</h2>
-                  <h4>One Bedroom Apartment</h4>
-                </header>
-                <div class="entry-content">
-                  <p class="entry-title">
-                    Units Available: 6 <br>
-                    Second Floor
-                  </p>
-                  <ol>
-                    <li> Living + Open Kitchen Area </li>
-                    <li> 1 Bedroom </li>
-                    <li> Toilet </li>
-                    <li> Parking </li>
-                    <li> Driver’s room (optional) </li>
-                    <li> Additional Storage (optional)</li>
-                  </ol>
-                  <p>
-                    <strong>Total Floor Area: 59 m<sup>2</sup></strong>
-                  </p>
+              <div class="column-1">
+                <a href="<?php echo get_permalink( get_the_ID() ); ?>">
+                  <div class="project_img_wrap">
+                    <figure class="">
+                      <img src="<?php echo $image[0]; ?>" alt="thumbnail">
+                    </figure>
+                  </div>
+                </a>
+                <div class="">
+                  <article <?php post_class(); ?>>
+                    <header class="entry-header">
+                      <h2 class="entry-title"><?php echo $post->post_title; ?></h2>
+                    </header>
+                    <div class="entry-content">
+                      <?php echo $post->post_content; ?>
+                    </div>
+                  </article>
                 </div>
-              </article>
+              </div>
             </div>
-          </div>
+          <?php endforeach; ?>
+
         </div>
-      </div>
-    </section>
+      </section>
+
+    <?php endforeach; ?>
 
     <br>
 

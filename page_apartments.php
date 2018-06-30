@@ -66,6 +66,73 @@ get_header();
 
     <br>
 
+    <div class="cmsmasters_row_inner">
+      <div class="cmsmasters_row_margin">
+        <div class="cmsmasters_column one_fourth rooms">
+          <div class="cmsmasters_column_inner">
+            <div id="cmsmasters_fb_ef07ee5e3c" class="cmsmasters_featured_block">
+              <div class="featured_block_inner">
+                <div class="featured_block_text">
+                  <div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+                    <a href="<?php echo get_page_link(41); ?>">
+                      <h2 class="cmsmasters_heading">One Bed Room</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cmsmasters_column one_fourth rooms">
+          <div class="cmsmasters_column_inner">
+            <div id="cmsmasters_fb_e81afc63a2" class="cmsmasters_featured_block">
+              <div class="featured_block_inner">
+                <div class="featured_block_text">
+                  <div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+                    <a href="<?php echo get_page_link(43); ?>">
+                      <h2 class="cmsmasters_heading">Two Bed Rooms</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cmsmasters_column one_fourth rooms">
+          <div class="cmsmasters_column_inner">
+            <div id="cmsmasters_fb_659c48ffe6" class="cmsmasters_featured_block">
+              <div class="featured_block_inner">
+                <div class="featured_block_text">
+                  <div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+                    <a href="<?php echo get_page_link(45); ?>">
+                      <h2 class="cmsmasters_heading">Three Bed Rooms</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cmsmasters_column one_fourth rooms">
+          <div class="cmsmasters_column_inner">
+            <div id="cmsmasters_fb_725e32fff3" class="cmsmasters_featured_block">
+              <div class="featured_block_inner">
+                <div class="featured_block_text">
+                  <div class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
+                    <a href="<?php echo get_page_link(47); ?>">
+                      <h2 class="cmsmasters_heading">Penthouses</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
  	</div>
 
  </div> <!-- /main-->

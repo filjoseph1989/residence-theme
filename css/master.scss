@@ -103,8 +103,30 @@ h1 {
 }
 
 .middle-home {
-  @media (min-width: 320px) {
+  .lifetyle-slider {
+    background-color: hsla(0, -6%, 95%, 1);
+    width:  100%;
+
+    @media (min-width: 320) {
+      padding:  0 170px;
+    }
+    @media (min-width: 1023px) {
+      padding:  0 170px;
+    }
+  }
+  .tour {
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+    font-weight: 700;
+    h1 {
+      font-size: 50px !important;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 1023px) {
     padding-top: 20px !important;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 70px !important;
   }
 }
 
@@ -718,6 +740,11 @@ div[class^='close-'] {
 .section-2 {
   justify-content: center;
 
+  .entry-content {
+    h4 {
+      font-family: 'Great Vibes', cursive;
+    }
+  }
   .section-2-two {
     position: relative;
 
@@ -889,22 +916,23 @@ div[class^='close-'] {
           }
         }
         .project_img_wrap {
-          height: 400px;
+          height: 300px;
           display: flex;
           border: 1px solid teal;
           justify-content: center;
 
-          @media (min-width: 320px) {
-            height: 360px;
-          }
-          @media (min-width: 576px) {
-            height: 400px;
+          &:hover {
+            height: auto;
           }
 
           figure {
-            img {
-              width: 350px;
+              background-image: none !important;
+              overflow:  hidden;
+
+              img {
+              max-width: 350px;
               margin: 0 auto;
+              width: 100%;
             }
           }
 
@@ -1122,6 +1150,22 @@ section[class^="section"] {
       }
     }
   }
+  .btn {
+    &:hover {
+      background-color: #00675f !important;
+      color: white;
+    }
+
+    a {
+      font-family: 'Raleway', sans-serif !important;
+      color: black !important;
+
+      &:hover {
+        position: relative;
+        color: white !important;
+      }
+    }
+  }
 }
 
 #lifetyle {
@@ -1142,6 +1186,70 @@ section[class^="section"] {
 
   @media (min-width: 320px) and (max-width: 767px) {
     font-size: 25px;
+  }
+}
+
+.tnp-field-button {
+  .tnp-submit {
+    padding: 15px 20px !important;
+    color: white !important;
+  }
+}
+
+.post {
+  .section-flex {
+    @media (min-width: 320px) and (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+  .entry-title {
+    font-family: 'Raleway', sans-serif;
+  }
+  .post-thumbnail {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .posted-on {
+    time {
+      font-family: 'Raleway', sans-serif;
+    }
+    .updated {
+      color: #999999;
+      font-size: 12px;
+      line-height: 26px;
+      margin: 0 10px;
+    }
+  }
+  .author a,
+  .cat-links a {
+    color: #999999;
+    font-size: 12px;
+    line-height: 26px;
+    text-transform: capitalize;
+  }
+}
+
+.cmsmasters_slider_project_inner {
+  background-color: white !important;
+}
+
+.brochure {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  z-index: 1;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gainsboro;
+  box-shadow: 0px 1px darkgrey;
+  font-size: 20px;
+  color: black;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 190px;
   }
 }
 
