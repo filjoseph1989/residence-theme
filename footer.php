@@ -253,11 +253,13 @@
 	</div>
 </div>
 
-<div class="brochure tooltip" title="Download Brochure">
-	<a href="#downloadBrochuresModal" id="download-brochue">
-		<i class="fas fa-file-pdf"></i>
-	</a>
-</div>
+<?php if (is_home()): ?>
+	<div class="brochure tooltip" title="Download Brochure">
+		<a href="#downloadBrochuresModal" id="download-brochue">
+			<i class="fas fa-file-pdf"></i>
+		</a>
+	</div>
+<?php endif; ?>
 
 <div id="downloadBrochuresModal">
 	<div class="close-downloadBrochuresModal">
